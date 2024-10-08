@@ -1,0 +1,222 @@
+:root{
+    --darkbackground:rgb(56, 55, 55);
+    --darkpolice:wheat;
+    --backgroundcolor: #DB6A8F ;
+    --buttoncolor: #E8AABE;
+    --titlecolor: #CA3C66;
+    --footer:#4AA3A2;
+    --shadow:#852f4b;
+    --police:"Noto Sans";
+
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+img{
+    object-fit: contain;
+    display: flex;
+    justify-items: center;
+    width:100%;
+}
+
+body {
+    font-family: var(--police);
+    width:100%;
+}
+
+nav>p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+#citation{
+    font-size: 1.5rem;
+}
+
+#dégradé {
+    display: inline-block;
+    background: linear-gradient(to left, #530820,#d8104c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);    
+    background-color: var(--backgroundcolor);
+    margin:auto 0;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: var(--backgroundcolor);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+header>img{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    width:70%;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+header>button {
+    background-image: url(images/fleurs.jfif);
+    border-color: var(--buttoncolor);
+    border-radius: 10px;
+    box-shadow:var(--shadow) 5px 5px 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 10vh;
+    height:20vw;
+    margin-bottom: 10px;   
+}
+
+header>.buttona {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+header>.buttonb {
+    grid-column: 2/3;
+    grid-row:3/4;
+}
+
+main{
+    display: flex;
+    flex-direction : column;
+}
+
+main>.buttonc {
+    background-image: url(images/fleurs.jfif);
+    border-color: var(--buttoncolor);
+    border-radius: 10px;
+    box-shadow:var(--shadow) 5px 5px 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 20vh;
+    height:15vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.moi1 {
+    border-radius: 50%;
+    box-shadow: var(--shadow) 2px 2px 2px 2px;
+}
+
+.cv {
+    width:25%;
+    margin-left: 20px;
+}
+
+a {
+    color:black;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    justify-content: space-around;
+    background-color: var(--footer);
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+
+@media screen and (min-width:600px) and (max-width:1024px){
+    header {
+        margin:0 auto;
+    }
+
+    header>nav>p{
+        font-size: 3rem;
+    }
+
+    header>img {
+        margin-left: 80px;
+    }
+
+    .buttona, .buttonb {
+        margin-left: 80px;
+        width:30vw;
+        height:10vh;
+        font-size: 1.5rem;
+    }
+    
+    .moi1 {
+        border-radius: 50%;
+        box-shadow: var(--shadow) 2px 2px 2px 2px;
+    }
+
+    h1{
+        font-size:3.5rem;
+    }
+
+    footer{
+        font-size: 1.5rem;
+    }
+    }
+    
+@media screen and (min-width:1024px) {
+    header {
+        margin:0 auto;
+    }
+
+    header>nav>p{
+        font-size: 4rem;
+    }
+
+    header>img {
+        margin-left: 80px;
+    }
+
+    .buttona, .buttonb {
+        margin-left: 80px;
+        width:30vw;
+        height:15vh;
+        font-size: 1.5rem;
+    }
+
+    main>.buttonc {
+        width: 40vh;
+        height:10vw;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .moi1 {
+        border-radius: 50%;
+        box-shadow: var(--shadow) 2px 2px 2px 2px;
+    }
+    
+    h1{
+        font-size:4rem;
+    }
+
+    footer {
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+    }
+    }

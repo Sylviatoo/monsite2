@@ -30,19 +30,21 @@ body {
 
 header {
     background-color: var(--backgroundcolor);
-    padding-top: 40px;
     padding-bottom: 40px;
+}
+
+nav {
+    margin-bottom: 20px;
 }
 
 nav>p {
     font-size: 2rem;
     font-weight: bold;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    margin-left: 20px;
 }
 
 #citation{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #dégradé {
@@ -56,23 +58,23 @@ nav>p {
 h1 {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .conteneur {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width:60vw;
-    height:40vh;
-    gap:40px;
-    margin:auto 0;
+    margin: auto 0;
+}
+
+.button1, .button2 {
+    margin-top: 30px;
 }
 
 .button1, .button2, .button3, .button4{
-    width: 120%;
-    height:70%;
-    margin-left: 50%;
+    width: 70%;
+    height: 40%;
+    margin-left: 20%;
 }
 
 .button1 {
@@ -100,8 +102,8 @@ h1 {
     grid-row: 1/2;
     border-radius: 50%;
     box-shadow: var(--shadow) 2px 2px 2px 2px;
-    width:70%;
-    margin-left: 40%;
+    width:40%;
+    margin-left: 30%;
 }
 
 header>div>button {
@@ -109,8 +111,9 @@ header>div>button {
     border-color: var(--buttoncolor);
     border-radius: 10px;
     box-shadow:var(--shadow) 5px 5px 10px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
+    font-family: var(--police);
 }
 
 span{
@@ -157,8 +160,8 @@ main>article>button{
     margin-bottom: 10px;
     font-size: 1rem;
     font-weight: bold;
-    width:40vw;
-    height:10vh;
+    width:50vw;
+    height:20vh;
 }
 
 footer {
@@ -169,7 +172,7 @@ footer {
     background-color: var(--footer);
     color: black;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     padding-top:20px;
     padding-bottom: 20px;
 }
@@ -193,8 +196,17 @@ footer {
     
     .button1, .button2, .button3, .button4{
         width: 20vw;
-        height:7vh;
+        height:10vh;
         margin-left: 35%;
+    }
+
+    .button2{
+        margin-top: 0;
+        margin-top: 20px;
+    }
+
+    .button3{
+        margin-top: 10px;
     }
 
     .button1 {
@@ -235,7 +247,7 @@ footer {
     }
 
     footer{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     main>article{

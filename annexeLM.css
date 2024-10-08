@@ -34,16 +34,19 @@ header {
     grid-template-rows: repeat(3, 1fr);    
     background-color: var(--backgroundcolor);
     margin:auto 0;
+    padding-bottom : 40px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+}
+
+header>nav{
+    grid-column: 1/3;
+    grid-row:1/2;
 }
 
 header>nav>p{
-    grid-column: 1/2;
-    grid-row:1/2;
     margin-left: 20px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -72,9 +75,10 @@ header>button {
     box-shadow:var(--shadow) 5px 5px 10px;
     font-size: 1.25rem;
     font-weight: bold;
-    width: 10vh;
-    height:20vw;
+    width: 80%;
+    height:90%;
     margin-bottom: 10px;   
+    font-family: var(--police);
 }
 
 h1 {
@@ -169,21 +173,21 @@ footer {
     }
 
     main>p{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-left: 70px;
         margin-right: 70px;
     }
 
     #logo {
         width:30vw;
-        height:10vh;
+        height:20vh;
         margin-left: 60px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
     
     footer, .contacts {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .contacts {
@@ -205,15 +209,14 @@ footer {
         margin-left: 80px;
     }
 
-
     header>img {
         margin-left: 120px;
     }
 
     .buttona, .buttonb {
         margin-left: 80px;
-        width:30vw;
-        height:15vh;
+        width:25vw;
+        height:20vh;
         font-size: 1.5rem;
     }
     
@@ -239,14 +242,14 @@ footer {
 
     #logo {
         width:30vw;
-        height:20vh;
+        height:30vh;
         margin-left: 60px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
     
     footer, .contacts {
-        font-size: 2rem;
+        font-size: 0.6rem;
     }
 
     .contacts {
